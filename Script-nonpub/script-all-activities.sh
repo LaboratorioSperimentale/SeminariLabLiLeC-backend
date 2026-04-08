@@ -4,6 +4,9 @@ set -Eeuo pipefail
 # ============================================================
 # publish-site-on-gh-pages.sh
 #
+# Da lanciare SEMPRE dalla root del vault:
+#   SeminariLabLiLeC/
+#
 # Scopo:
 #   1. Facoltativamente preprocessa il vault per i tag
 #   2. Facoltativamente genera il sito Quartz
@@ -13,19 +16,6 @@ set -Eeuo pipefail
 #      ../SeminariLabLiLeC-pages
 #   5. Preserva .git e .nojekyll
 #   6. Fa commit e push sul branch gh-pages
-#
-# Uso tipico:
-#   Solo pubblicazione del public già generato:
-#     ./Script-nonpub/publish-site-on-gh-pages.sh
-#
-#   Preprocess + build + pubblicazione:
-#     ./Script-nonpub/publish-site-on-gh-pages.sh --all
-#
-#   Solo build + pubblicazione:
-#     ./Script-nonpub/publish-site-on-gh-pages.sh --build
-#
-#   Solo preprocess + pubblicazione:
-#     ./Script-nonpub/publish-site-on-gh-pages.sh --preprocess
 # ============================================================
 
 log() {
@@ -40,11 +30,11 @@ die() {
 usage() {
   cat <<'EOF'
 Uso:
-  publish-site-on-gh-pages.sh [opzioni]
+  ./Script-nonpub/publish-site-on-gh-pages.sh [opzioni]
 
 Opzioni:
-  --preprocess          Esegue script-generate_tag-sections.py prima della pubblicazione
-  --build               Esegue script-generate-quartz-site prima della pubblicazione
+  --preprocess          Esegue Script-nonpub/script-generate_tag-sections.py
+  --build               Esegue Script-nonpub/script-generate-quartz-site
   --all                 Esegue preprocess + build + pubblicazione
   -m, --message         Messaggio commit per gh-pages
   --main-message        Messaggio commit per main
@@ -64,18 +54,15 @@ require_cmd() {
 }
 
 # ------------------------------------------------------------
-# Path principali ricavati automaticamente
+# Path relativi alla root del vault
+# Lo script DEVE essere lanciato da SeminariLabLiLeC/
 # ------------------------------------------------------------
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-VAULT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
-PARENT_DIR="$(cd "${VAULT_DIR}/.." && pwd)"
+VAULT_DIR="."
+PAGES_DIR="../SeminariLabLiLec-pages"
+PUBLIC_DIR="./quartz-site/quartz-4/public"
 
-# Path modificabili via variabili d'ambiente, se un giorno ti servisse
-PAGES_DIR="${PAGES_DIR:-${PARENT_DIR}/SeminariLabLiLec-pages}"
-PUBLIC_DIR="${PUBLIC_DIR:-${VAULT_DIR}/quartz-site/quartz-4/public}"
-
-PREPROCESS_SCRIPT="${PREPROCESS_SCRIPT:-${SCRIPT_DIR}/script-generate_tag-sections.py}"
-BUILD_SCRIPT="${BUILD_SCRIPT:-${SCRIPT_DIR}/script-generate-quartz-site}"
+PREPROCESS_SCRIPT="./Script-nonpub/script-generate_tag-sections.py"
+BUILD_SCRIPT="./Script-nonpub/script-generate-quartz-site"
 
 RUN_PREPROCESS=0
 RUN_BUILD=0
@@ -130,11 +117,13 @@ done
 require_cmd git
 require_cmd rsync
 
-[[ -d "$VAULT_DIR" ]] || die "Vault non trovato: $VAULT_DIR"
-[[ -d "$PAGES_DIR" ]] || die "Cartella worktree gh-pages non trovata: $PAGES_DIR"
+[[ "$(basename "$PWD")" == "SeminariLabLiLeC" ]] \
+  || die "Devi lanciare questo script dalla root del vault SeminariLabLiLeC"
 
 git -C "$VAULT_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1 \
-  || die "Il vault non è una repository Git valida: $VAULT_DIR"
+  || die "La cartella corrente non è una repository Git valida"
+
+[[ -d "$PAGES_DIR" ]] || die "Cartella worktree gh-pages non trovata: $PAGES_DIR"
 
 git -C "$PAGES_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1 \
   || die "La cartella gh-pages non è una worktree/repository Git valida: $PAGES_DIR"
@@ -181,8 +170,6 @@ fi
 log "Preparo commit del vault su main (escludo public e cache Quartz)"
 
 git -C "$VAULT_DIR" add -A .
-
-# Se public o cache fossero finiti nello staging, li tolgo.
 git -C "$VAULT_DIR" reset -q HEAD -- "$MAIN_EXCLUDE_PUBLIC" "$MAIN_EXCLUDE_CACHE" 2>/dev/null || true
 
 if git -C "$VAULT_DIR" diff --cached --quiet; then
@@ -205,7 +192,6 @@ rsync -av --delete \
   --exclude='.nojekyll' \
   "${PUBLIC_DIR}/" "${PAGES_DIR}/"
 
-# Garantisce sempre la presenza di .nojekyll
 touch "${PAGES_DIR}/.nojekyll"
 
 # ------------------------------------------------------------

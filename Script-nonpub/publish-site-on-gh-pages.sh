@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-
-SOURCE_DIR="quartz-site/quartz-4/public/"
+SOURCE_DIR="./quartz-site/quartz-4/public/"
 PAGES_DIR="../SeminariLabLiLec-pages"
 COMMIT_MSG="${1:-Update site}"
+
+if [ "$(basename "$PWD")" != "SeminariLabLiLeC" ]; then
+  echo "ERROR: run this script from the root folder SeminariLabLiLeC"
+  exit 1
+fi
 
 if [ ! -d "$SOURCE_DIR" ]; then
   echo "ERROR: source folder not found: $SOURCE_DIR"
