@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Lista-Seminari/en/a-linement-En.md",
+                "file": "ReadMe-nonpub/SETUP MANUAL - full.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "a-linement-En"
+              "title": "SETUP MANUAL - full"
             }
           }
         ]
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "altro/a-todo.md",
+                "file": "ReadMe-nonpub/SETUP MANUAL - full.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of a-todo"
+              "title": "Outline of SETUP MANUAL - full"
             }
           }
         ],
@@ -169,8 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,8 +185,12 @@
   },
   "active": "43bd43b41a9e1030",
   "lastOpenFiles": [
-    "Script-nonpub/script-all-activities.sh~",
     "ReadMe-nonpub/README-nonpub.md",
+    "ReadMe-nonpub/SETUP MANUAL - full.md",
+    "ReadMe-nonpub/SETUP MANUAL.md",
+    "ReadMe-nonpub/SETUP MANUAL - old.md",
+    "content/Lista-Seminari/en/a-linement-En.md",
+    "Script-nonpub/script-all-activities.sh~",
     "Script-nonpub/script-all-activities.sh",
     "script-all-activities.sh~",
     "script-all-activities.sh",
@@ -227,9 +230,6 @@
     "TTP-nonpub/tre+uno/tigr-It.md",
     "TTP-nonpub/tre+uno/smallworld-It.md",
     "TTP-nonpub/tre+uno/nvivo-En.md",
-    "TTP-nonpub/tre+uno/index.md",
-    "TTP-nonpub/tre+uno/emozioni-It.md",
-    "TTP-nonpub/tre+uno/elantrascrizione-It.md",
-    "TTP-nonpub/tre+uno/edizionidigitali-It.md"
+    "TTP-nonpub/tre+uno/index.md"
   ]
 }
