@@ -1,49 +1,38 @@
 ---
 id-asset: "06"
-title: "elantrascrizione"
-description: Seminario fake su lessico e ripetizione.
-videoLink: 
-- "https://www.youtube.com/watch?v=OHgy75FqOZk"  
-videoThumbnail: "https://www.wpbeginner.com/wp-content/uploads/2013/07/get-the-post-thumbnail-url-in-wordpress-og.png"  
-videoLabel: "Watch video"
+title: "La Trascrizione del Parlato con ELAN"
+description: "La Trascrizione del Parlato con ELAN"
+videoLink:
+videoThumbnail:
+videoLabel:
 tags:
-- "#ob/tre"
-- "#ob/uno"
-- "#ob/animali"
-layout: ["seminar", "altro"]
-seminar-date: "21.06.2024"
-seminar-title: "..."
-seminar-description: "..."
-seminar-author-codekey: 
-- codauthor1
-- codauthor2
-seminar-author-affiliation: "..."
-seminar-author-affiliation-unibo: ["no", "yes"]
-seminar-video-title: "..."
-seminar-video-link: "video-link"
-seminar-video-thumbnail-link: "video-link"
-seminar-video-length: 2h
-tutorial-agent-type: ["human", "machine"]
-tutorial-extended-title: "..."
-tutorial-short-title: "catma"
-tutorial-author-codkey: "codkey"
-tutorial-video-agent-type: ["human", "machine"]
-tutorial-video-extended-title: "..."
-tutorial-video-short-title: "..."
-tutorial-video-author-codkey: "codkey"
-translation: ["language", "link"]
-status: ["draft", "finished"]
-resources:  
-- type: video  
-  title: Interview video  
-  url: https://example.com/video  
-  thumbnail: /img/thumb1.jpg  
-- type: pdf  
-  title: Slides  
-  url: /docs/slides.pdf  
-- type: image  
-  title: Poster  
-  url: /img/poster.jpg
+- "#ob/annotazione"
+- "#ob/corpora/parlato"
+- "#ob/tool"
+layout: ["seminar"]
+seminar-date: ""
+seminar-title: "La Trascrizione del Parlato con ELAN"
+seminar-description: ""
+seminar-speaker: "silviaballare"
+seminar-author-codekey:
+- "marcoesposito"
+seminar-author-affiliation: ""
+seminar-author-affiliation-unibo: []
+seminar-video-title: "La Trascrizione del Parlato con ELAN"
+seminar-video-link: "https://liveunibo-my.sharepoint.com/personal/ludovica_pannitto_unibo_it/_layouts/15/stream.aspx?id=%2Fpersonal%2Fludovica%5Fpannitto%5Funibo%5Fit%2FDocuments%2FSEMINARI%20LAB%2FVideo%2FLa%20Trascrizione%20del%20Parlato%20con%20ELAN%20%28Silvia%20Ballar%C3%A8%29%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6de32167%2Da3c0%2D4ff0%2D9f13%2D978bc7696a4c"
+seminar-video-thumbnail-link: ""
+seminar-video-length: "2h"
+tutorial-agent-type: []
+tutorial-extended-title: ""
+tutorial-short-title: ""
+tutorial-author-codkey: ""
+tutorial-video-agent-type: []
+tutorial-video-extended-title: ""
+tutorial-video-short-title: ""
+tutorial-video-author-codkey: ""
+translation: []
+status: ["draft"]
+resources: []
 ---
 
 

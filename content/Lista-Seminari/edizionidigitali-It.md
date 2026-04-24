@@ -1,49 +1,37 @@
 ---
 id-asset: "05"
-title: "edizionidigitali"
-description: Seminario fake su lessico e ripetizione.
-videoLink: 
-- "https://www.youtube.com/watch?v=OHgy75FqOZk"  
-videoThumbnail: "https://www.wpbeginner.com/wp-content/uploads/2013/07/get-the-post-thumbnail-url-in-wordpress-og.png"  
-videoLabel: "Watch video"
+title: "Introduzione alle edizioni digitali"
+description: "Introduzione alle edizioni digitali"
+videoLink:
+videoThumbnail:
+videoLabel:
 tags:
-- "#ob/tre"
-- "#ob/uno"
-- "#ob/animali"
-layout: ["seminar", "altro"]
-seminar-date: "21.06.2024"
-seminar-title: "..."
-seminar-description: "..."
-seminar-author-codekey: 
-- codauthor1
-- codauthor2
-seminar-author-affiliation: "..."
-seminar-author-affiliation-unibo: ["no", "yes"]
-seminar-video-title: "..."
-seminar-video-link: "video-link"
-seminar-video-thumbnail-link: "video-link"
-seminar-video-length: 2h
-tutorial-agent-type: ["human", "machine"]
-tutorial-extended-title: "..."
-tutorial-short-title: "catma"
-tutorial-author-codkey: "codkey"
-tutorial-video-agent-type: ["human", "machine"]
-tutorial-video-extended-title: "..."
-tutorial-video-short-title: "..."
-tutorial-video-author-codkey: "codkey"
-translation: ["language", "link"]
-status: ["draft", "finished"]
-resources:  
-- type: video  
-  title: Interview video  
-  url: https://example.com/video  
-  thumbnail: /img/thumb1.jpg  
-- type: pdf  
-  title: Slides  
-  url: /docs/slides.pdf  
-- type: image  
-  title: Poster  
-  url: /img/poster.jpg
+- "#ob/annotazione"
+- "#ob/tool"
+layout: ["seminar"]
+seminar-date: ""
+seminar-title: "Introduzione alle edizioni digitali"
+seminar-description: ""
+seminar-speaker: "Roberto Rosselli Del Turco"
+seminar-author-codekey:
+- "giuliamarmo"
+seminar-author-affiliation: ""
+seminar-author-affiliation-unibo: []
+seminar-video-title: "https://liveunibo-my.sharepoint.com/:v:/g/personal/ludovica_pannitto_unibo_it/EWIMMVy9Rw9BmRGdt9X5tYIBFA-JBgyXstpwZ-zHYQSa4Q?e=63OZER&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D"
+seminar-video-link: ""
+seminar-video-thumbnail-link: ""
+seminar-video-length: "3:52h"
+tutorial-agent-type: []
+tutorial-extended-title: ""
+tutorial-short-title: ""
+tutorial-author-codkey: ""
+tutorial-video-agent-type: []
+tutorial-video-extended-title: ""
+tutorial-video-short-title: ""
+tutorial-video-author-codkey: ""
+translation: []
+status: ["draft"]
+resources: []
 ---
 
 %% layout: seminar 

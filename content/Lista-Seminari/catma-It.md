@@ -1,49 +1,37 @@
 ---
 id-asset: "04"
-title: "catma"
-description: CATMA
+title: "Annotazione e Analisi di Testi Digitali con CATMA 7"
+description: "Annotazione e Analisi di Testi Digitali con CATMA 7"
 videoLink:
-- "https://www.youtube.com/watch?v=OHgy75FqOZk"
-videoThumbnail: "https://www.wpbeginner.com/wp-content/uploads/2013/07/get-the-post-thumbnail-url-in-wordpress-og.png"
-videoLabel: "Watch video"
+videoThumbnail:
+videoLabel:
 tags:
-- "#ob/tre"
-- "#ob/uno"
-- "#ob/animali"
-layout: ["seminar", "altro"]
+- "#ob/annotazione"
+- "#ob/tool"
+layout: ["seminar"]
 seminar-date: "21.06.2024"
-seminar-title: "..."
-seminar-description: "..."
+seminar-title: "Digital Text Annotation and Analysis with CATMA 7"
+seminar-description: ""
+seminar-speaker: "mariakazawa"
 seminar-author-codekey:
-- codauthor1
-- codauthor2
-seminar-author-affiliation: "..."
-seminar-author-affiliation-unibo: ["no", "yes"]
-seminar-video-title: "..."
-seminar-video-link: "video-link"
-seminar-video-thumbnail-link: "video-link"
-seminar-video-length: 2h
-tutorial-agent-type: ["human", "machine"]
-tutorial-extended-title: "..."
-tutorial-short-title: "catma"
-tutorial-author-codkey: "codkey"
-tutorial-video-agent-type: ["human", "machine"]
-tutorial-video-extended-title: "..."
-tutorial-video-short-title: "..."
-tutorial-video-author-codkey: "codkey"
-translation: ["language", "link"]
-status: ["draft", "finished"]
-resources:
-- type: video
-  title: Interview video
-  url: https://example.com/video
-  thumbnail: /img/thumb1.jpg
-- type: pdf
-  title: Slides
-  url: /docs/slides.pdf
-- type: image
-  title: Poster
-  url: /img/poster.jpg
+- "marcoesposito"
+seminar-author-affiliation: ""
+seminar-author-affiliation-unibo: []
+seminar-video-title: "Digital Text Annotation and Analysis with CATMA 7"
+seminar-video-link: "https://liveunibo-my.sharepoint.com/personal/ludovica_pannitto_unibo_it/_layouts/15/stream.aspx?id=%2Fpersonal%2Fludovica%5Fpannitto%5Funibo%5Fit%2FDocuments%2FSEMINARI%20LAB%2FVideo%2FDigital%20Text%20Annotation%20and%20Analysis%20with%20CATMA%207%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E29d9f385%2D5185%2D490a%2D8cc3%2Dba9f215993da"
+seminar-video-thumbnail-link: ""
+seminar-video-length: "2h"
+tutorial-agent-type: []
+tutorial-extended-title: ""
+tutorial-short-title: ""
+tutorial-author-codkey: ""
+tutorial-video-agent-type: []
+tutorial-video-extended-title: ""
+tutorial-video-short-title: ""
+tutorial-video-author-codkey: ""
+translation: []
+status: ["draft"]
+resources: []
 ---
 
 

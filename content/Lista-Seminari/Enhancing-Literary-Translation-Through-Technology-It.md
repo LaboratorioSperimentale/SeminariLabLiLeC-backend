@@ -1,49 +1,36 @@
 ---
 id-asset: "08"
-title: "Enhancing-Literary-Translation-Through-Technology"
-description: Seminario fake su lessico e ripetizione.
-videoLink: 
-- "https://www.youtube.com/watch?v=OHgy75FqOZk"  
-videoThumbnail: "https://www.wpbeginner.com/wp-content/uploads/2013/07/get-the-post-thumbnail-url-in-wordpress-og.png"  
-videoLabel: "Watch video"
+title: "Digital Aesthetics: Enhancing Literary Translation Through Technology"
+description: "Digital Aesthetics: Enhancing Literary Translation Through Technology"
+videoLink:
+videoThumbnail:
+videoLabel:
 tags:
-- "#ob/tre"
-- "#ob/uno"
-- "#ob/animali"
-layout: ["seminar", "altro"]
-seminar-date: "21.06.2024"
-seminar-title: "..."
-seminar-description: "..."
-seminar-author-codekey: 
-- codauthor1
-- codauthor2
-seminar-author-affiliation: "..."
-seminar-author-affiliation-unibo: ["no", "yes"]
-seminar-video-title: "..."
-seminar-video-link: "video-link"
-seminar-video-thumbnail-link: "video-link"
-seminar-video-length: 2h
-tutorial-agent-type: ["human", "machine"]
-tutorial-extended-title: "..."
-tutorial-short-title: "catma"
-tutorial-author-codkey: "codkey"
-tutorial-video-agent-type: ["human", "machine"]
-tutorial-video-extended-title: "..."
-tutorial-video-short-title: "..."
-tutorial-video-author-codkey: "codkey"
-translation: ["language", "link"]
-status: ["draft", "finished"]
-resources:  
-- type: video  
-  title: Interview video  
-  url: https://example.com/video  
-  thumbnail: /img/thumb1.jpg  
-- type: pdf  
-  title: Slides  
-  url: /docs/slides.pdf  
-- type: image  
-  title: Poster  
-  url: /img/poster.jpg
+- "#ob/nlp"
+layout: ["seminar"]
+seminar-date: "24.06.2025"
+seminar-title: "Digital Aesthetics: Enhancing Literary Translation Through Technology"
+seminar-description: ""
+seminar-speaker: "NuriaMolinesGalarza"
+seminar-author-codekey:
+- "bot"
+seminar-author-affiliation: ""
+seminar-author-affiliation-unibo: []
+seminar-video-title: "Universal Dependencies come Standard per Corpora di L2"
+seminar-video-link: "https://liveunibo-my.sharepoint.com/personal/ludovica_pannitto_unibo_it/_layouts/15/stream.aspx?id=%2Fpersonal%2Fludovica%5Fpannitto%5Funibo%5Fit%2FDocuments%2FRecordings%2FDigital%20Aesthetics%20Enhancing%20Literary%20Translation%20Through%20Technology%2D20250624%5F155847%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E0ebab775%2D4c0d%2D4dd7%2D936c%2Dd8e2a7c41f2c"
+seminar-video-thumbnail-link: ""
+seminar-video-length: "2h"
+tutorial-agent-type: []
+tutorial-extended-title: ""
+tutorial-short-title: ""
+tutorial-author-codkey: ""
+tutorial-video-agent-type: []
+tutorial-video-extended-title: ""
+tutorial-video-short-title: ""
+tutorial-video-author-codkey: ""
+translation: []
+status: ["draft"]
+resources: []
 ---
 
 %%layout: seminar

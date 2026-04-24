@@ -1,49 +1,37 @@
 ---
 id-asset: "11"
-title: "tigr"
-description: Seminario fake su lessico e ripetizione.
-videoLink: 
-- "https://www.youtube.com/watch?v=OHgy75FqOZk"  
-videoThumbnail: "https://www.wpbeginner.com/wp-content/uploads/2013/07/get-the-post-thumbnail-url-in-wordpress-og.png"  
-videoLabel: "Watch video"
+title: "Il corpus TIGR: un corpus video per lo studio dell'italiano parlato"
+description: "Il corpus TIGR: un corpus video per lo studio dell'italiano parlato"
+videoLink:
+videoThumbnail:
+videoLabel:
 tags:
-- "#ob/tre"
-- "#ob/uno"
-- "#ob/animali"
-layout: ["seminar", "altro"]
-seminar-date: "21.06.2024"
-seminar-title: "..."
-seminar-description: "..."
-seminar-author-codekey: 
-- codauthor1
-- codauthor2
-seminar-author-affiliation: "..."
-seminar-author-affiliation-unibo: ["no", "yes"]
-seminar-video-title: "..."
-seminar-video-link: "video-link"
-seminar-video-thumbnail-link: "video-link"
-seminar-video-length: 2h
-tutorial-agent-type: ["human", "machine"]
-tutorial-extended-title: "..."
-tutorial-short-title: "catma"
-tutorial-author-codkey: "codkey"
-tutorial-video-agent-type: ["human", "machine"]
-tutorial-video-extended-title: "..."
-tutorial-video-short-title: "..."
-tutorial-video-author-codkey: "codkey"
-translation: ["language", "link"]
-status: ["draft", "finished"]
-resources:  
-- type: video  
-  title: Interview video  
-  url: https://example.com/video  
-  thumbnail: /img/thumb1.jpg  
-- type: pdf  
-  title: Slides  
-  url: /docs/slides.pdf  
-- type: image  
-  title: Poster  
-  url: /img/poster.jpg
+- "#ob/corpora"
+- "#ob/corpora/parlato"
+layout: ["seminar"]
+seminar-date: "06.11.2024"
+seminar-title: "The TIGR corpus: collection, transcription, processing and management of videorecorded data for the study of Italian talk-in-interaction"
+seminar-description: ""
+seminar-speaker: "johannamiecznikowski, elenabattaglia"
+seminar-author-codekey:
+- "silviamantovani"
+seminar-author-affiliation: ""
+seminar-author-affiliation-unibo: []
+seminar-video-title: "Universal Dependencies come Standard per Corpora di L2"
+seminar-video-link: "https://liveunibo-my.sharepoint.com/personal/ludovica_pannitto_unibo_it/_layouts/15/stream.aspx?id=%2Fpersonal%2Fludovica%5Fpannitto%5Funibo%5Fit%2FDocuments%2FSEMINARI%20LAB%2FVideo%2FThe%20TIGR%20corpus%20%2D%20collection%2C%20transcription%2C%20processing%20and%20management%20of%20videorecorded%20data%20for%20the%20study%20of%20Italian%20talk%20in%20interaction%20%281%29%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ea314ab83%2D2921%2D41f1%2D8bcd%2Dc0355dbc2760"
+seminar-video-thumbnail-link: ""
+seminar-video-length: "2h"
+tutorial-agent-type: []
+tutorial-extended-title: ""
+tutorial-short-title: ""
+tutorial-author-codkey: ""
+tutorial-video-agent-type: []
+tutorial-video-extended-title: ""
+tutorial-video-short-title: ""
+tutorial-video-author-codkey: ""
+translation: []
+status: ["draft"]
+resources: []
 ---
 
 %%layout: seminar
