@@ -1,1 +1,51 @@
+name: Build and Deploy Quartz Site
 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Python dependencies
+        run: pip install pyyaml
+
+      - name: Generate tag sections
+        run: python3 Script-nonpub/script-generate_tag-sections.py
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: quartz-site/quartz-4/package-lock.json
+
+      - name: Install Quartz dependencies
+        working-directory: quartz-site/quartz-4
+        run: npm ci
+
+      - name: Build Quartz site
+        working-directory: quartz-site/quartz-4
+        run: npx quartz build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: quartz-site/quartz-4/public
+          publish_branch: gh-pages
